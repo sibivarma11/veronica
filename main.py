@@ -1,14 +1,16 @@
 import requests
 from groq import Groq
+from dotenv import load_dotenv
 from gtts import gTTS
 import pygame
 import time
-
+import os
 # ----------------------------
 # CONFIG
 # ----------------------------
 
-GROQ_API_KEY = "REDACTED"
+load_dotenv()
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 
 # ----------------------------
